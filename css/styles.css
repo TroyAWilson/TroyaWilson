@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "poppins", sans-serif; }
+
+.main-nav {
+  display: flex;
+  justify-content: space-between; }
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin-right: 50px; }
+  .nav li {
+    margin: 5px; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=styles.css.map */
