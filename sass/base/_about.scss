@@ -1,0 +1,29 @@
+.about-conatiner{
+  padding: 50px;
+}
+.about-goals-skills{
+  display:flex;
+
+}
+.whatIdo{
+  width: 100%;
+  display: flex;
+}
+
+.skills-development,
+.skills-design{
+  width:50%;
+  text-align: center;
+  padding: 0 100px;
+}
+.about-info{
+  h4{
+    border-left: 1px solid $shark;
+    padding: 5px;
+
+    &::first-letter{
+      color: $off-pink;
+      font-size: 1.5em;
+    }
+  }
+}

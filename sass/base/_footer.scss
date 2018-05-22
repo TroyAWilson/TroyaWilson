@@ -1,0 +1,27 @@
+.mainFooter{
+  background-color:$shark;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img{
+    max-width: 50px;
+    margin:auto;
+    padding-top: 10px;
+  }
+  p{
+    margin:auto;
+    padding: 5px;
+    color: white;
+  }
+}
+.footer-nav{
+  list-style: none;
+  display: flex;
+  margin: auto;
+  padding: 10px;
+
+  li {
+    margin: 15px;
+  }
+}

@@ -1,0 +1,26 @@
+.services-container{
+  padding: 50px;
+
+
+    h4{
+      border-left: 1px solid $shark;
+      padding: 5px;
+
+      &::first-letter{
+        color: $off-pink;
+        font-size: 1.5em;
+      }
+    }
+  }
+.myServices{
+  max-width: 48%;
+  margin-bottom: 50px;
+}
+.services-flex{
+    width: 33%;
+    text-align: center;
+}
+.right{
+  margin-top: 45px;
+  margin-left: 25px;
+}

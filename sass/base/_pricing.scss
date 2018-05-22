@@ -1,0 +1,23 @@
+.pricing-container{
+  display: flex;
+  text-align: center;
+  padding: 50px;
+}
+.Pricing-box-container{
+  width: 31.5%;
+  margin: 10px;
+  padding: 35px;
+  border: 1px solid $shark;
+
+  ul{
+    list-style: none;
+  }
+}
+.pricing-button{
+  border: none;
+  padding:10px 25px;
+  border-radius: 2px;
+  background-color: $off-pink;
+  color: white;
+  font-size: 16px;
+}
