@@ -11,6 +11,7 @@
 
   ul{
     list-style: none;
+    margin-bottom: 50px;
   }
 }
 .pricing-button{
@@ -20,4 +21,11 @@
   background-color: $off-pink;
   color: white;
   font-size: 16px;
-}
+  transition: .5s;
+
+  }
+  .pricing-button:hover{
+    background-color: white;
+    color: $shark;
+    border: 1px solid $shark;
+  }

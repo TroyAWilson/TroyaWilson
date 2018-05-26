@@ -17,8 +17,16 @@
   margin-bottom: 50px;
 }
 .services-flex{
-    width: 33%;
+    width: 30%;
     text-align: center;
+    background-color: whitesmoke;
+    margin: 15px;
+    padding: 15px;
+    transition: background-color .5s, color .5s;
+}
+.services-flex:hover{
+  background-color: $shark;
+  color: white;
 }
 .right{
   margin-top: 45px;

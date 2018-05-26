@@ -14,6 +14,10 @@ body{
 a{
   text-decoration: none;
   color: whitesmoke;
+  transition: color .3s, font-size .5s;
+}
+a:hover{
+  color: $off-pink;
 }
 .main-container{
   display: flex;
@@ -29,4 +33,7 @@ a{
 .breakImage{
   img {width: 100%;
   }
+}
+.indent{
+  text-indent: 2em;
 }
