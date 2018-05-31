@@ -3,6 +3,7 @@
 }
 .about-goals-skills{
   display:flex;
+  flex-wrap: wrap;
 
 }
 .whatIdo{
@@ -27,4 +28,8 @@
       font-size: 1.5em;
     }
   }
+}
+
+.skills{
+  width: 100%;
 }

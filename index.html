@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <!-- http://www.chartjs.org/docs/latest/charts/doughnut.html -->
 </head>
 
 <body>
@@ -46,11 +48,31 @@
       </div>
 
       <div class ="skills">
-        <h4>My Skills</h4>
-        <span>HTML5</span>
-        <span>CSS3</span>
-        <span>Javascript</span>
-        <span>React?</span>
+        <canvas id="myChart" ></canvas>
+        <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+        labels: ["HTML", "CSS", "Javascript "],
+        datasets: [{
+            label: 'Traffic',
+            data: [25, 20, 22],
+            backgroundColor: [
+                'rgba(255, 87, 34, 1)',
+                'rgba(33, 150, 243, 1)',
+                'rgba(255, 218, 68, 1)'
+            ],
+            borderColor: [
+              'rgba(245, 245, 245, 1)',
+              'rgba(245, 245, 245, 1)',
+              'rgba(245, 245, 245, 1)'
+            ],
+            borderWidth: 1
+        }]
+        },
+        });
+        </script>
       </div>
     </div>
       <div class ="whatIdo">
