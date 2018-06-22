@@ -44,7 +44,8 @@
         <div class ="about-goals-skills">
       <div class ="about-info">
         <h4>My Goals</h4>
-        <p class ="indent">I am a front-end web developer with skills in HTML, CSS, Javascript, and jQuery, Skills I'm currently working on are AJAX and ReactJS. I'm passionate about learning and growing my skill set to improve myself as a developer.While development is where I feel I truly shine I also have an interest in design with skills in Photoshop and wireframing. </p>
+        <p class ="indent">I am a front-end web developer with skills in HTML, CSS, Javascript, and jQuery, Skills I'm currently working on are Python and ReactJS. I'm passionate about learning and growing my skill set to improve myself as a developer.While development is where I feel I truly shine I also have an interest in design with skills in Photoshop and wireframing. </p>
+        <p class ="indent">Who am I really though? I am Troy Austyn Wilson, some of my favorite things include Corgis, Jojo's Bizzare Adventure, and The Adventure Zone Podcast. I've enjoyed the idea of deconstructing and creating things ever since I was young.</p>
       </div>
 
       <div class ="skills">
@@ -54,19 +55,23 @@
         var myChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
-        labels: ["HTML", "CSS", "Javascript "],
+        labels: ["HTML", "CSS", "Javascript ","ReactJS","Python"],
         datasets: [{
-            label: 'Traffic',
-            data: [25, 20, 22],
+            label: 'Skills',
+            data: [25, 25, 35,10,5],
             backgroundColor: [
                 'rgba(255, 87, 34, 1)',
                 'rgba(33, 150, 243, 1)',
-                'rgba(255, 218, 68, 1)'
+                'rgba(255, 218, 68, 1)',
+                'rgba(150,50,198,1)',
+                'rgba(30,223,113,1)',
             ],
             borderColor: [
               'rgba(245, 245, 245, 1)',
               'rgba(245, 245, 245, 1)',
-              'rgba(245, 245, 245, 1)'
+              'rgba(245, 245, 245, 1)',
+              'rgba(245, 245, 245, 1)',
+              'rgba(245, 245, 245, 1)',
             ],
             borderWidth: 1
         }]
@@ -102,35 +107,67 @@
     <div class ="portfolio-container container">
 
         <h4>My Portfolio</h4>
-
+<!-- Not sure about keeping the primary tools bit in there, seems redundant -->
         <div class ="project">
-          <img src ="https://placeimg.com/350/350/tech/sepia">
-          <h6>Game Show App</h6>
-          <p>Lorem ipsum dolor sit amet</p>
+          <a href="https://github.com/TroyAWilson/TechdegreeProjectSeven"><img src ="https://placeimg.com/350/350/tech/sepia"></a>
+          <div>
+            <h6>Game Show App</h6>
+            <p>Hang man-like game app using Javascript</p>
+            <span>Primary tools</span>
+            <ul>
+              <li>Javascript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+          </div>
         </div>
 
         <div class ="project">
-          <img src ="https://placeimg.com/350/350/people/grayscale">
+          <a href="https://github.com/TroyAWilson/TechdegreeProjectSix"><img src ="https://placeimg.com/350/350/people/grayscale"></a>
           <h6>Dynamic Video Player</h6>
-          <p>Lorem ipsum dolor sit amet</p>
+          <p>Videoe player with dynamic transcript tracking</p>
+          <span>Primary tools</span>
+          <ul>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
         </div>
-
+<!-- Might change this one for a different project so I wont link the anchor -->
         <div class ="project">
           <img src ="https://placeimg.com/350/350/nature">
           <h6>Interactive Photo Gallery</h6>
-          <p>Lorem ipsum dolor sit amet</p>
+          <p>Interactive photo gallery </p>
+          <span>Primary tools</span>
+          <ul>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
         </div>
 
         <div class ="project">
-          <img src ="https://placeimg.com/350/350/arch/sepia">
-          <h6>Project4</h6>
-          <p>Lorem ipsum dolor sit amet</p>
+          <a href="https://github.com/TroyAWilson/TechdegreeProjectTen"><img src ="https://placeimg.com/350/350/arch/sepia"></a>
+          <h6>Employee Directory</h6>
+          <p>I've created a Employee directory pulling information from the something something API</p>
+          <span>Primary tools</span>
+          <ul>
+            <li>Javascript</li>
+            <li>jQuery Plugin</li>
+            <li>Something somtheing API</li>
+          </ul>
         </div>
 
         <div class ="project">
-          <img src ="https://placeimg.com/350/350/animals/sepia">
-          <h6>Project5</h6>
-          <p>Lorem ipsum dolor sit amet</p>
+          <a href="https://github.com/TroyAWilson/techdegree-project-eleven"><img src ="https://placeimg.com/350/350/animals/sepia"></a>
+          <h6>ReactJS Photo Gallery</h6>
+          <p>Using the Flickr API and ReactJS I've constructed a searchable photo gallery</p>
+          <span>Primary tools</span>
+          <ul>
+            <li>Javascript</li>
+            <li>ReactJS</li>
+            <li>Flickr API</li>
+          </ul>
         </div>
 
       </div>
@@ -166,28 +203,30 @@
     </div>
     <!-- end services section -->
 
+    <!-- I may end up putting a cool life quote over this picture and having like a dark fade over it  -->
     <div class ="breakImage">
-      <img src ="https://loremflickr.com/1200/500">
+      <!-- I'll remove this inline code and put it into the sass file when I've put sass onto this computer  -->
+      <img height ="600px" overflow="hidden" src ="images/closeupcode.jpg">
     </div>
 
     <div id = "Pricing">
       <div class = "pricing-container container">
       <div class ="Pricing-box-container">
         <h4>Web Development</h4>
-        <h3>$Number$</h3>
+        <h3>$25</h3>
         <span>per hour</span>
         <ul>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
+          <li>Dynamic responsive websites</li>
+          <li>Search engine optimized</li>
+          <li>Unbeateable pricing</li>
+          <li>Really cool guy</li>
         </ul>
         <a href ="#"><span class ="pricing-button"><span>Get a quote</span></span></a>
       </div>
 
       <div class ="Pricing-box-container">
         <h4>Web Design</h4>
-        <h3>$Number$</h3>
+        <h3>$20</h3>
         <span>per hour</span>
         <ul>
           <li>Lorem ipsum dolor sit amet</li>
@@ -200,8 +239,8 @@
 
       <div class ="Pricing-box-container">
         <h4>Wordpress</h4>
-        <h3>$Number$</h3>
-        <span>per hour</span>
+        <h3>$55</h3>
+        <span>starting at</span>
         <ul>
           <li>Lorem ipsum dolor sit amet</li>
           <li>Lorem ipsum dolor sit amet</li>
