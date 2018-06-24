@@ -2,9 +2,11 @@
   padding: 50px; }
 
 .about-goals-skills {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .whatIdo {
+  padding-top: 50px;
   width: 100%;
   display: flex; }
 
@@ -14,12 +16,25 @@
   text-align: center;
   padding: 0 100px; }
 
-.about-info h4 {
-  border-left: 1px solid #242930;
-  padding: 5px; }
-  .about-info h4::first-letter {
-    color: #ff4162;
-    font-size: 1.5em; }
+.about-info {
+  position: relative;
+  width: 70%; }
+  .about-info h4 {
+    border-left: 1px solid #242930;
+    padding: 5px; }
+    .about-info h4::first-letter {
+      color: #ff4162;
+      font-size: 1.5em; }
+
+.skills {
+  width: 100%; }
+
+#myChart {
+  position: absolute;
+  top: 815px;
+  right: 100px;
+  float: right;
+  max-width: 30%; }
 
 .contact-container {
   display: flex;
@@ -197,7 +212,21 @@ h6 {
 
 .project {
   max-width: 33%;
-  margin: auto; }
+  margin: auto;
+  position: relative; }
+
+.project-information {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background-color: rgba(36, 41, 48, 0.6);
+  padding: 50px;
+  color: whitesmoke;
+  opacity: 0;
+  transition: 1s ease-out; }
+
+.project-information:hover {
+  opacity: 1; }
 
 .pricing-container {
   display: flex;
@@ -250,7 +279,8 @@ h6 {
 
 .services-flex:hover {
   background-color: #242930;
-  color: white; }
+  color: white;
+  cursor: pointer; }
 
 .right {
   margin-top: 45px;
@@ -286,7 +316,20 @@ a:hover {
   flex-wrap: wrap; }
 
 .breakImage img {
-  width: 100%; }
+  width: 100%;
+  opacity: .5; }
+
+.break-quote {
+  position: absolute;
+  z-index: 100;
+  max-width: 75%;
+  top: 3000px;
+  left: 220px;
+  font-size: 2em;
+  color: #242930; }
+  .break-quote p, .break-quote span {
+    text-shadow: 0px .5px  whitesmoke;
+    text-indent: 1em; }
 
 .indent {
   text-indent: 2em; }

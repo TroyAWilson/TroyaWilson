@@ -32,6 +32,20 @@ a:hover{
 }
 .breakImage{
   img {width: 100%;
+  opacity: .5;
+  }
+}
+.break-quote{
+  position: absolute;
+  z-index: 100;
+  max-width: 75%;
+  top: 3000px;
+  left: 220px;
+  font-size: 2em;
+  color: $shark;
+  p, span{
+    text-shadow: 0px .5px  whitesmoke;
+    text-indent: 1em;
   }
 }
 .indent{

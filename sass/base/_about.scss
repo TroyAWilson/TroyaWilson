@@ -4,9 +4,9 @@
 .about-goals-skills{
   display:flex;
   flex-wrap: wrap;
-
 }
 .whatIdo{
+  padding-top: 50px;
   width: 100%;
   display: flex;
 }
@@ -19,6 +19,8 @@
 
 }
 .about-info{
+  position: relative;
+  width:70%;
   h4{
     border-left: 1px solid $shark;
     padding: 5px;
@@ -32,4 +34,11 @@
 
 .skills{
   width: 100%;
+}
+#myChart{
+  position: absolute;
+  top: 815px;
+  right: 100px;
+  float:right;
+  max-width: 30%;
 }

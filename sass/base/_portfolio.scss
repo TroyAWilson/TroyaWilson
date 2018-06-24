@@ -19,4 +19,18 @@
 .project{
   max-width: 33%;
   margin:auto;
+  position: relative;
+}
+.project-information{
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background-color: rgba(36, 41, 48, .6);
+  padding: 50px;
+  color: whitesmoke;
+  opacity: 0;
+  transition: 1s ease-out;
+}
+.project-information:hover{
+  opacity: 1;
 }
