@@ -1,18 +1,32 @@
+.sticky-wrapper{
+  color:whitesmoke;
+}
+.is-sticky{
+  z-index: 1000000000;
+  color: $shark;
+  transition: 5s ease-out;
 
-
+  a{
+    transition: 5s ease-out;
+    color: $shark;
+  }
+  a:hover{
+    color:$off-pink;
+    transition: .5s ease-out;
+  }
+}
 .main-nav{
   display:flex;
   justify-content: space-between;
-  background-color: transparent;
   width: 100%;
   position: absolute;
+  z-index: 1000;
 
   h2{
     margin-left: 50px;
-    color: whitesmoke;
   }
-
 }
+
 .pinkText{
   color: $off-pink;
 }
@@ -27,14 +41,13 @@
 
 .introPiece{
   background-color: $shark;
-  // background-image: url("https://loremflickr.com/1420/800");
   background-image: url("../images/abstract-blur.jpg");
   background-position:center;
   background-size: cover;
   text-align: center;
   padding: 50px;
   padding-top: 175px;
-  height: 700px;
+  height: 1000px;
   color: whitesmoke;
 
   img{

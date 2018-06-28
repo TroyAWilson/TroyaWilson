@@ -5,26 +5,28 @@
   <title>Troy A Wilson - Front-end Web Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <!-- Poppins google font -->
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <!-- Scripts for the chart plug in -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
-  <!-- http://www.chartjs.org/docs/latest/charts/doughnut.html -->
 </head>
-<!--  test -->
 <body>
   <div class ="main-container">
+    <!-- Main header for navigation and such, on scroll sticky plug in is appled and color changes for easier readability -->
   <header>
-    <div class="main-nav">
+    <div class="main-nav" id="sticker">
       <h2 class="name">Troy <span class = "pinkText">A</span> Wilson</h2>
         <ul class="nav">
           <li><a class ="pinkText" href="#">Home</a></li>
           <li><a href="#About">About</a></li>
           <li><a href="#Portfolio">Portfolio</a></li>
-          <li><a href="#Servcies">Servcies</a></li>
+          <li><a href="#Services">Services</a></li>
           <li><a href="#Pricing">Pricing</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
     </div>
   </header>
+  <!-- Intro Piece is for the big image with the text, may change the I do part or add more functionality to it -->
     <div class = "introPiece">
       <!-- Idea: For the background, a dark navy/purple with animated pixelated clouds. Interactive? -->
       <h3 class ="intro-title">Front-end Web Developer & Designer</h3>
@@ -32,22 +34,23 @@
       <br>
       <img src ="images\html-5 (2).svg">
       <img src ="images\css-3.svg">
-      <img class ="test" src ="images\java-script.svg">
+      <img src ="images\java-script.svg">
+      <!-- To clarify what I mean below, I want to do a cool drawing line animatin for each of the icons above -->
       <!-- Animated icons for HTML CSS Javascript, etc using keyframes and SVGs -->
       <p class="intro-p">Based in the San Francisco bay area, I specialize in Custom Front-end Development and Design</p>
       <a href ="#About"><span class ="intro-button"><span>Learn More</span></span></a>
       <a href ="#Contact"><span class ="intro-button"><span>I need a website</span></span></a>
+      <!-- simple description and buttons with nice animation -->
     </div>
-
+    <!-- About section containing a paragraph introducing myself a nifty chart of my skills and some icons -->
     <div id ="About">
       <div class ="about-conatiner container">
         <div class ="about-goals-skills">
       <div class ="about-info">
         <h4>My Goals</h4>
         <p class ="indent">I am a front-end web developer with skills in HTML, CSS, Javascript, and jQuery, Skills I'm currently working on are Python and ReactJS. I'm passionate about learning and growing my skill set to improve myself as a developer.While development is where I feel I truly shine I also have an interest in design with skills in Photoshop and wireframing. </p>
-        <p class ="indent">Who am I really though? I am Troy Austyn Wilson, some of my favorite things include Corgis, Jojo's Bizzare Adventure, and The Adventure Zone Podcast. I've enjoyed the idea of deconstructing and creating things ever since I was young.</p>
       </div>
-
+      <!-- Chart with skills on it, thought it'd be a cool touch also an exmple of plugin and chart use -->
       <div class ="skills">
         <canvas id="myChart" ></canvas>
         <script>
@@ -78,38 +81,37 @@
         },
         });
         </script>
-      </div>
-    </div>
+      </div> <!-- End Skills div  -->
+    </div> <!-- End about goals skills -->
       <div class ="whatIdo">
-
+        <!-- Small explanation about development and design responsively -->
         <div class ="skills-development">
           <img src ="images\programming.svg" width ="50px">
           <h6>Development</h6>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
+
         <div class ="skills-design">
           <img src ="images\computer-graphic.svg" width ="50px">
           <h6>Design</h6>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-
-        <div class ="?">
-
-        </div>
-      </div>
+      </div> <!-- End what I do div -->
     </div>
     </div>
 <!-- End about section -->
 
 
   <div id ="Portfolio">
-
+    <!-- Portfolio section dispalys a picture and when hovered over shows a small description and a link to the github repo
+        May even create a seperate page entirely for when it's clicked explaining the respective project
+    -->
     <div class ="portfolio-container container">
 
         <h4>My Portfolio</h4>
-<!-- Not sure about keeping the primary tools bit in there, seems redundant -->
+          <!-- Not sure about keeping the primary tools bit in there, seems redundant -->
         <div class ="project">
-          <a href="https://github.com/TroyAWilson/TechdegreeProjectSeven"><img src ="https://placeimg.com/350/350/tech/sepia"></a>
+          <img src ="https://placeimg.com/350/350/tech/sepia">
           <div class="project-information">
             <h6>Game Show App</h6>
             <p>Hang man-like game app using Javascript</p>
@@ -119,11 +121,17 @@
               <li>HTML5</li>
               <li>CSS3</li>
             </ul>
+            <a href ="https://github.com/TroyAWilson/TechdegreeProjectSeven">
+              <div class="link">
+                <p>Learn more...<p>
+                <img src ="images/arrow.svg" width="25px" height="25px">
+              </div>
+            </a>
           </div>
         </div>
 
         <div class ="project">
-          <a href="https://github.com/TroyAWilson/TechdegreeProjectSix"><img src ="https://placeimg.com/350/350/people/grayscale"></a>
+        <img src ="https://placeimg.com/350/350/people/grayscale">
           <div class="project-information">
             <h6>Dynamic Video Player</h6>
             <p>Videoe player with dynamic transcript tracking</p>
@@ -133,6 +141,12 @@
               <li>HTML</li>
               <li>CSS</li>
             </ul>
+            <a href ="https://github.com/TroyAWilson/TechdegreeProjectSix">
+              <div class="link">
+                <p>Learn more...<p>
+                <img src ="images/arrow.svg" width="25px" height="25px">
+              </div>
+            </a>
           </div>
         </div>
 <!-- Might change this one for a different project so I wont link the anchor -->
@@ -147,11 +161,17 @@
               <li>HTML</li>
               <li>CSS</li>
             </ul>
+            <a href ="https://github.com/TroyAWilson/TechdegreeProjectSeven">
+              <div class="link">
+                <p>Learn more...<p>
+                <img src ="images/arrow.svg" width="25px" height="25px">
+              </div>
+            </a>
           </div>
         </div>
 
         <div class ="project">
-          <a href="https://github.com/TroyAWilson/TechdegreeProjectTen"><img src ="https://placeimg.com/350/350/arch/sepia"></a>
+          <img src ="https://placeimg.com/350/350/arch/sepia">
           <div class="project-information">
             <h6>Employee Directory</h6>
             <p>I've created a Employee pulling information from the user API</p>
@@ -161,11 +181,17 @@
               <li>jQuery Plugin</li>
               <li>Something somtheing API</li>
             </ul>
+            <a href ="https://github.com/TroyAWilson/TechdegreeProjectTen">
+              <div class="link">
+                <p>Learn more...<p>
+                <img src ="images/arrow.svg" width="25px" height="25px">
+              </div>
+            </a>
           </div>
         </div>
 
         <div class ="project">
-          <a href="https://github.com/TroyAWilson/techdegree-project-eleven"><img src ="https://placeimg.com/350/350/animals/sepia"></a>
+          <img src ="https://placeimg.com/350/350/animals/sepia">
           <div class="project-information">
           <h6>ReactJS Photo Gallery</h6>
             <p>Using the Flickr API and ReactJS I've constructed photo gallery</p>
@@ -175,6 +201,12 @@
               <li>ReactJS</li>
               <li>Flickr API</li>
             </ul>
+            <a href ="https://github.com/TroyAWilson/techdegree-project-eleven">
+              <div class="link">
+                <p>Learn more...<p>
+                <img src ="images/arrow.svg" width="25px" height="25px">
+              </div>
+            </a>
           </div>
         </div>
 
@@ -182,15 +214,19 @@
     </div>
     <!-- End Portfolio section -->
 
-    <div id = "Services">
+    <div id="Services">
+      <!--
+        Servcies section is a more in depth explanation of what each respective service is, how it's done, and how I can do it,
+        This section has JS functionality, each button will change the text to relevant information about the clicked icon.
+      -->
       <div class ="services-container container">
         <div class ="myServices left">
           <h4>My Servcies</h4>
-          <p class ="indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+          <p class =" left indent">Web development is a broad term for the work involved in developing a web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing the simplest static single page of plain text to the most complex web-based internet applications (or just 'web apps') electronic businesses, and social network services. A more comprehensive list of tasks to which web development commonly refers, may include web </p>
         </div>
 
         <div class="myServices right">
-          <p class ="indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+          <p class ="right indent">'web delopment' usually refers to the main non-design aspects of building web sites: writing markup and coding. Most recently Web development has come to mean the creation of content management systems or CMS. These CMS can be made from scratch, proprietary or open source. In broad terms the CMS acts as middleware between the database and the user through the browser. A principle benefit of a CMS is that it allows non-technical people to make changes to their</p>
         </div>
 
         <div class ="services-development services-flex">
@@ -211,7 +247,9 @@
     </div>
     <!-- end services section -->
 
-    <!-- I may end up putting a cool life quote over this picture and having like a dark fade over it  -->
+    <!-- This is just a cool image with a nice quote over it to take a break from all the serious buisness going on
+        Simply a little bit of extra flare
+    -->
     <div class ="breakImage">
       <!-- I'll remove this inline code and put it into the sass file when I've put sass onto this computer  -->
       <img height ="600px" overflow="hidden" src ="images/closeupcode.jpg">
@@ -221,12 +259,16 @@
       </div>
     </div>
 
+    <!--
+      Pricing section is fairly self explanitory, here I list the pricing for each service and bullet out the things that each
+      service comes with. The prices are up in the air right now, mostly just placeholder atm.
+    -->
     <div id = "Pricing">
       <div class = "pricing-container container">
       <div class ="Pricing-box-container">
         <h4>Web Development</h4>
         <h3>$25</h3>
-        <span>per hour</span>
+        <span>/ per hour</span>
         <ul>
           <li>Dynamic responsive websites</li>
           <li>Search engine optimized</li>
@@ -239,7 +281,7 @@
       <div class ="Pricing-box-container">
         <h4>Web Design</h4>
         <h3>$20</h3>
-        <span>per hour</span>
+        <span>/ per hour</span>
         <ul>
           <li>Lorem ipsum dolor sit amet</li>
           <li>Lorem ipsum dolor sit amet</li>
@@ -252,7 +294,7 @@
       <div class ="Pricing-box-container">
         <h4>Wordpress</h4>
         <h3>$55</h3>
-        <span>starting at</span>
+        <span>/ starting at</span>
         <ul>
           <li>Lorem ipsum dolor sit amet</li>
           <li>Lorem ipsum dolor sit amet</li>
@@ -265,6 +307,11 @@
     </div>
     <!-- end pricing section -->
 
+    <!--
+      Contact section, another self explanitory one, just some information like phone number and email as well as a form for quickly
+      sending an email my way. I may use the google maps API and do a bit of fun map stuff for general location as well as
+      a quick showcase that I know how to use API's
+    -->
     <div id = "Contact">
       <div class ="contact-container container">
       <div class ="contact-info">
@@ -326,17 +373,56 @@
     <!-- end contact section -->
 
   <footer class ="mainFooter">
-
-      <img src ="images\startup.svg">
-
+    <!--
+      Footer seciton is the wrap up containing links to my social medias, a cute logo that I designed as well as boring but important
+      copyright information and credit for the icons used
+    -->
+      <img class="footer-logo" src ="images/tawlogo.png">
+      <!-- font for logo is Fredoka One -->
       <ul class ="footer-nav">
         <li><a href="https://twitter.com/_TroyWilson" target="_blank" class="social twitter">Twitter</a></li>
         <li><a href ="https://www.linkedin.com/in/troy-wilson-019b87a7/" target="_blank" class="social linkedin">LinkedIn</a></li>
         <li><a href="https://github.com/TroyAWilson" target="_blank" class="social github">Github</a></li>
       </ul>
       <p class="copyright">&copy 2018, Troy <span class ="pinkText">A</span> Wilson.</p>
-      <div class="icon-madeby">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <div class="icon-madeby">
+        Check out the new logo that I created on <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a> https://logomakr.com/9gH7vJ
+        Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </footer>
 </div>
+<!-- Links to my JS files -->
+<script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="scripts/sticky-master/jquery.sticky.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
 </body>
+<!-- and we're done :) -->
+
+  <!--
+    Project instructions/requirments:
+      -Mobile first
+        -320px smallest
+        -viewport meta tag
+      -Links to atleast 4 projects
+      -Short description of each project and tools used
+      -For example, if you include Project #7 the SVG Web Site Update
+       you could describe what you did (replaced raster images with scalable vector graphics)
+       and the skills you used  HTML, CSS and an understanding of SVGs.
+      -Include contant information
+        -Twitter
+        -LinkedIn
+        -Email
+        -etc
+      -Atleast one JS Interactivity
+        -can be more but atleast One
+      -Github repo
+      -Publish the site
+        -TroyAWilson.com, I already own the domain
+      -Make sure code is valid
+
+      Extra credit
+        -Tablet breakpoint
+        -link more than 4 projects
+        -use SVGs
+        -multiple JS interactions
+  -->
 </html>
