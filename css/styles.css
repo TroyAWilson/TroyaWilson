@@ -125,7 +125,7 @@ h6 {
   flex-direction: column;
   justify-content: center; }
   .mainFooter img {
-    max-width: 150px;
+    max-width: 75px;
     margin: auto;
     padding-top: 10px; }
   .mainFooter p {

@@ -4,8 +4,6 @@
 *{
   box-sizing: border-box;
 }
-html{
-}
 body{
   margin:0 0;
   padding:0;
@@ -33,8 +31,9 @@ a:hover{
   flex-wrap: wrap;
 }
 .breakImage{
-  img {width: 100%;
-  opacity: .5;
+  img {
+    width: 100%;
+    opacity: .5;
   }
 }
 .break-quote{
