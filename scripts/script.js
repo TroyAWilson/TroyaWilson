@@ -11,6 +11,12 @@ servicesWordPress = document.getElementsByClassName('services-wordpress');
 
   $("header").sticky({topSpacing:0,responsiveWidth:true});
 
+/************************************************************************************************************************
+//Other
+*************************************************************************************************************************/
+
+
+
 
 /************************************************************************************************************************
 //Functionality for the services buttons, changes the text when each respective button is clicked
