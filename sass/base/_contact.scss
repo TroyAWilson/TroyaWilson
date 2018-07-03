@@ -3,10 +3,17 @@
   flex-direction: column;
   padding: 50px;
   max-width: 100%;
+  @media(min-width: 720px){
+    flex-direction: row;
+  }
+
 }
 .contact-info{
   // width: 50%;
   margin-bottom: 75px;
+    @media(min-width: 720px){
+      width:48%;
+    }
 }
 .contact-item{
   display: flex;
@@ -19,6 +26,9 @@
   p{
     max-width: 100%;
     margin: 0 25px;
+  }
+  @media(min-width: 720px){
+    margin-right: 30px;
   }
 }
 .contact-icon{
@@ -40,7 +50,11 @@
       padding-left: 5px;
     }
   }
-
+  @media(min-width: 720px){
+    width: 50%;
+    border-left: 1px solid black;
+    padding-left: 50px;
+}
 
 }
 

@@ -1,7 +1,9 @@
 .pricing-container{
   display: flex;
   text-align: center;
-  // padding: 50px;
+  @media(min-width: 720px){
+  padding: 50px;
+}
 }
 .Pricing-box-container{
   width: 100%;//31.5
@@ -18,6 +20,9 @@
     font-size: 2.5em;
     margin:0;
     display:inline;
+  }
+  @media(min-width: 720px){
+    width:31.5%;
   }
 }
 .pricing-button{

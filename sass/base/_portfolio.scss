@@ -17,12 +17,18 @@
     margin-top: 15px;
     max-width: 100%;
   }
+  @media(min-width: 720px){
+    flex-direction: row;
+  }
 }
 .project{
   max-width: 100%;
   margin:auto;
   position: relative;
   overflow: hidden;
+  @media(min-width: 720px){
+    max-width: 33%;
+  }
 }
 .project-information{
   display: flex;
@@ -39,9 +45,21 @@
   opacity: 0;
   transition: .7s ease-out;
   font-size: 2em;
+    @media(min-width: 720px){
+      font-size: 1em;
+      top: 20px;
+      left: 15px;
+      height: 388px;
+      width: 350px;
+      padding: 50px;
+  }
 }
 .small-hidden{
   display: none;
+  @media(min-width: 720px){
+    display: flex;
+    flex-direction: column;
+  }
 }
 .project-information:hover{
   opacity: 1;
@@ -52,6 +70,9 @@
   p{
     font-size: .6em;
     margin: auto;
+    @media(min-width: 720px){
+      font-size: 1em;
+    }
   }
   img{
     position: relative;

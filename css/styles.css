@@ -8,14 +8,18 @@
 .whatIdo {
   padding-top: 50px;
   width: 100%;
-  display: flex;
-  flex-direction: column; }
+  display: flex; }
 
 .skills-development,
 .skills-design {
   width: 100%;
   text-align: center;
   padding: 10px; }
+  @media (min-width: 720px) {
+    .skills-development,
+    .skills-design {
+      width: 50%;
+      padding: 0 75px; } }
 
 .about-info {
   position: relative;
@@ -26,10 +30,16 @@
     .about-info h4::first-letter {
       color: #ff4162;
       font-size: 1.5em; }
+  @media (min-width: 720px) {
+    .about-info {
+      width: 75%; } }
 
 .skills {
   width: 100%;
   display: none; }
+  @media (min-width: 720px) {
+    .skills {
+      display: flex; } }
 
 #myChart {
   position: absolute;
@@ -43,9 +53,15 @@
   flex-direction: column;
   padding: 50px;
   max-width: 100%; }
+  @media (min-width: 720px) {
+    .contact-container {
+      flex-direction: row; } }
 
 .contact-info {
   margin-bottom: 75px; }
+  @media (min-width: 720px) {
+    .contact-info {
+      width: 48%; } }
 
 .contact-item {
   display: flex;
@@ -55,6 +71,9 @@
   .contact-item p {
     max-width: 100%;
     margin: 0 25px; }
+  @media (min-width: 720px) {
+    .contact-item {
+      margin-right: 30px; } }
 
 .contact-icon {
   margin: 0 10px; }
@@ -69,6 +88,11 @@
       color: #ff4162;
       border-left: 1px #242930 solid;
       padding-left: 5px; }
+  @media (min-width: 720px) {
+    .contact-form {
+      width: 50%;
+      border-left: 1px solid black;
+      padding-left: 50px; } }
 
 .form-input {
   margin-right: 50px;
@@ -255,12 +279,18 @@ h6 {
   .portfolio-container img {
     margin-top: 15px;
     max-width: 100%; }
+  @media (min-width: 720px) {
+    .portfolio-container {
+      flex-direction: row; } }
 
 .project {
   max-width: 100%;
   margin: auto;
   position: relative;
   overflow: hidden; }
+  @media (min-width: 720px) {
+    .project {
+      max-width: 33%; } }
 
 .project-information {
   display: flex;
@@ -277,9 +307,21 @@ h6 {
   opacity: 0;
   transition: .7s ease-out;
   font-size: 2em; }
+  @media (min-width: 720px) {
+    .project-information {
+      font-size: 1em;
+      top: 20px;
+      left: 15px;
+      height: 388px;
+      width: 350px;
+      padding: 50px; } }
 
 .small-hidden {
   display: none; }
+  @media (min-width: 720px) {
+    .small-hidden {
+      display: flex;
+      flex-direction: column; } }
 
 .project-information:hover {
   opacity: 1; }
@@ -290,6 +332,9 @@ h6 {
   .link p {
     font-size: .6em;
     margin: auto; }
+    @media (min-width: 720px) {
+      .link p {
+        font-size: 1em; } }
   .link img {
     position: relative;
     bottom: 10px; }
@@ -300,6 +345,9 @@ h6 {
 .pricing-container {
   display: flex;
   text-align: center; }
+  @media (min-width: 720px) {
+    .pricing-container {
+      padding: 50px; } }
 
 .Pricing-box-container {
   width: 100%;
@@ -313,6 +361,9 @@ h6 {
     font-size: 2.5em;
     margin: 0;
     display: inline; }
+  @media (min-width: 720px) {
+    .Pricing-box-container {
+      width: 31.5%; } }
 
 .pricing-button {
   border: none;
@@ -330,6 +381,9 @@ h6 {
 
 .services-container {
   padding: 10px; }
+  @media (min-width: 720px) {
+    .services-container {
+      padding: 50px; } }
   .services-container h4 {
     border-left: 1px solid #242930;
     padding: 5px; }
@@ -340,6 +394,9 @@ h6 {
 .myServices {
   max-width: 100%;
   margin-bottom: 50px; }
+  @media (min-width: 720px) {
+    .myServices {
+      max-width: 48%; } }
 
 .services-flex {
   width: 100%;
@@ -348,12 +405,19 @@ h6 {
   margin: 15px;
   padding: 15px;
   transition: background-color .5s, color .5s; }
+  @media (min-width: 720px) {
+    .services-flex {
+      width: 30%; } }
 
 .services-flex:hover {
   background-color: #242930;
   color: white;
   cursor: pointer; }
 
+@media (min-width: 720px) {
+  .right {
+    margin-top: 45px;
+    margin-left: 25px; } }
 * {
   box-sizing: border-box; }
 
