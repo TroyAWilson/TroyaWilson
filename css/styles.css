@@ -8,7 +8,11 @@
 .whatIdo {
   padding-top: 50px;
   width: 100%;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 720px) {
+    .whatIdo {
+      flex-direction: row; } }
 
 .skills-development,
 .skills-design {
