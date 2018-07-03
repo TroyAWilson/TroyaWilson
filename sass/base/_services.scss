@@ -1,5 +1,5 @@
 .services-container{
-  padding: 50px;
+  padding: 10px;
 
 
     h4{
@@ -13,11 +13,11 @@
     }
   }
 .myServices{
-  max-width: 48%;
+  max-width: 100%;
   margin-bottom: 50px;
 }
 .services-flex{
-    width: 30%;
+    width: 100%;
     text-align: center;
     background-color: whitesmoke;
     margin: 15px;
@@ -29,7 +29,7 @@
   color: white;
   cursor: pointer;
 }
-.right{
-  margin-top: 45px;
-  margin-left: 25px;
-}
+// .right{
+//   margin-top: 45px;
+//   margin-left: 25px;
+// }

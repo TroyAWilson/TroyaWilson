@@ -21,9 +21,12 @@
   width: 100%;
   position: absolute;
   z-index: 1000;
-
   h2{
-    margin-left: 50px;
+    margin-left: 10%;
+    font-size: 1em;
+    @media(min-width:720px){
+      font-size:25px;
+    }
   }
 }
 
@@ -31,28 +34,36 @@
   color: $off-pink;
 }
 .nav{
-  display: inline-flex;
+  display: none; //inline-block
   list-style: none;
   margin-right: 50px;
   li{
     margin: 5px;
   }
+  @media(min-width:720px){
+    display:flex;
+  }
 }
 
+
 .introPiece{
+  max-width: 100%;
   background-color: $shark;
   background-image: url("../images/abstract-blur.jpg");
   background-position:center;
   background-size: cover;
   text-align: center;
-  padding: 50px;
-  padding-top: 175px;
+  padding: 10px;
+  // padding-top: 175px;
   height: 1000px;
   color: whitesmoke;
 
   img{
     max-width: 100px;
-  }
+    }
+    @media(min-width: 720px){
+      padding-top: 175px;
+    }
 }
 
 .intro-title{
@@ -65,9 +76,11 @@
 
 .intro-p{
   font-size: 1.2em;
+  max-width: 100%;
 }
 
 .intro-button{
+  display: block;
   border: none;
   padding:10px 25px;
   border-radius: 2px;
@@ -76,6 +89,10 @@
   font-size: 16px;
   margin: 25px;
   transition: background-color .5s, color .5s;
+  @media(min-width: 720px){
+    display: inline;
+    max-width: 34%;
+  }
 }
 .intro-button:hover{
   background-color: white;

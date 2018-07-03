@@ -1,6 +1,6 @@
-
 .portfolio-container{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 50px;
   h4{
@@ -13,28 +13,35 @@
         font-size: 1.5em;
         }
     }
-  }
   img{
     margin-top: 15px;
     max-width: 100%;
   }
+}
 .project{
-  max-width: 33%;
+  max-width: 100%;
   margin:auto;
   position: relative;
   overflow: hidden;
 }
 .project-information{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
-  top: 15px;
-  left: 0px;
-  height: 395px;
+  top: 30px;
+  left: 5px;
+  width: 325px;
+  height: 300px;
   background-color: rgba(36, 41, 48, .6);
-  padding: 50px;
+  padding: 15px;
   color: whitesmoke;
   opacity: 0;
   transition: .7s ease-out;
-
+  font-size: 2em;
+}
+.small-hidden{
+  display: none;
 }
 .project-information:hover{
   opacity: 1;
@@ -43,11 +50,12 @@
   display: flex;
   justify-content:flex-end;
   p{
-    margin-left: 10px;
+    font-size: .6em;
+    margin: auto;
   }
   img{
     position: relative;
-    bottom: 15px;
+    bottom: 10px;
   }
 }
 .link:hover{
