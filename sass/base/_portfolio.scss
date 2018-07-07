@@ -63,6 +63,9 @@
 }
 .project-information:hover{
   opacity: 1;
+  @media(min-width: 720px){
+    transform: scale(1.2);
+  }
 }
 .link{
   display: flex;
@@ -81,4 +84,62 @@
 }
 .link:hover{
   cursor:pointer;
+}
+
+/*******************************************************************************
+
+Project page styles
+
+*******************************************************************************/
+
+.projectPage-main-container{
+  margin:0;
+  padding:0;
+
+  h1{
+    text-align: center;
+  }
+}
+.projectPage-main-nav{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    h2{
+      margin-left: 10%;
+      font-size: 1em;
+      @media(min-width:720px){
+        font-size:25px;
+      }
+    }
+}
+.projectPage-big-image{
+  max-width: 100%;
+}
+.projectPage-small-image{
+  max-width: 30%;
+}
+.projectPage-images-container{
+  max-width: 50%;
+}
+.projectPage-flexContainer{
+  display: flex;
+  margin: 25px;
+}
+.projectPage-description{
+  max-width: 50%;
+  padding: 10px;
+}
+.projectPage-link{
+  background-color: $off-pink;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 50px;
+  transition: .5s ease-out;
+}
+.projectPage-link:hover{
+  background-color: whitesmoke;
+  color:$shark;
+  border: 1px $shark solid;
 }

@@ -49,7 +49,7 @@
 .introPiece{
   max-width: 100%;
   background-color: $shark;
-  background-image: url("../images/abstract-blur.jpg");
+  background-image: url("../images/background-background-image-clouds-1054289.jpg");
   background-position:center;
   background-size: cover;
   text-align: center;
@@ -62,7 +62,7 @@
     max-width: 100px;
     }
     @media(min-width: 720px){
-      padding-top: 175px;
+      padding-top: 150px;
     }
 }
 
@@ -71,7 +71,9 @@
 }
 
 .intro-span{
-  font-size: 4em;
+  color:$off-pink;
+  font-size: 5em;
+  font-family: 'Pacifico', cursive;
 }
 
 .intro-p{

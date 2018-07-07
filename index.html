@@ -9,6 +9,8 @@
   <link rel="shortcut icon" type="image/svg" href="images/tawlogo.png">
   <!-- Poppins google font -->
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <!-- This is a really nice cursive font, used for the intro  -->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <!-- Scripts for the chart plug in -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 </head>
@@ -31,12 +33,14 @@
   <!-- Intro Piece is for the big image with the text, may change the I do part or add more functionality to it -->
     <div class = "introPiece">
       <!-- Idea: For the background, a dark navy/purple with animated pixelated clouds. Interactive? -->
+      <span class="intro-span">Hey, I'm Troy!</span>
       <h3 class ="intro-title">Front-end Web Developer & Designer</h3>
-      <span class="intro-span">I DO </span> <!-- HTML5, CSS3, Javascript, React, Design, etc -->
-      <br>
+
+      <!-- <span class="intro-span">I DO </span>  HTML5, CSS3, Javascript, React, Design, etc -->
+      <!-- <br>
       <img src ="images\html-5 (2).svg">
       <img src ="images\css-3.svg">
-      <img src ="images\java-script.svg">
+      <img src ="images\java-script.svg"> -->
       <!-- To clarify what I mean below, I want to do a cool drawing line animatin for each of the icons above -->
       <!-- Animated icons for HTML CSS Javascript, etc using keyframes and SVGs -->
       <p class="intro-p">Based in the San Francisco bay area, I specialize in Custom Front-end Development and Design</p>
@@ -115,6 +119,10 @@
           <!-- Slice tool used the dimensions 700x700
               CMD + SHFT + 3 for full screen capture
          -->
+         <!--
+            So the plan right now is to create seperate pages for each respective portfolio link
+              Going to a new html page and having more detail on the project and linking to a live version.
+          -->
         <div class ="project">
           <img src ="images/Portfolio images/project-seven-thumb.svg">
           <div class="project-information">
@@ -128,7 +136,8 @@
                 <li>CSS3</li>
               </ul>
             </div>
-            <a href ="https://github.com/TroyAWilson/TechdegreeProjectSeven">
+            <!-- https://github.com/TroyAWilson/TechdegreeProjectSeven -->
+            <a href ="ProjectPages/projectOne.html">
               <div class="link">
                 <p>Learn more...</p>
                 <img src ="images/arrow.svg" width="25px" height="25px">
@@ -150,7 +159,8 @@
                 <li>CSS</li>
               </ul>
             </div>
-            <a href ="https://github.com/TroyAWilson/TechdegreeProjectSix">
+            <!-- https://github.com/TroyAWilson/TechdegreeProjectSix -->
+            <a href ="ProjectPages/projectTwo.html">
               <div class="link">
                 <p>Learn more...</p>
                 <img src ="images/arrow.svg" width="25px" height="25px">
@@ -172,7 +182,8 @@
                 <li>CSS</li>
               </ul>
             </div>
-            <a href ="https://github.com/TroyAWilson/TechdegreeProjectSeven">
+            <!-- https://github.com/TroyAWilson/TechdegreeProjectSeven -->
+            <a href ="ProjectPages/projectThree.html">
               <div class="link">
                 <p>Learn more...</p>
                 <img src ="images/arrow.svg" width="25px" height="25px">
@@ -194,7 +205,8 @@
                 <li>Something somtheing API</li>
               </ul>
             </div>
-            <a href ="https://github.com/TroyAWilson/TechdegreeProjectTen">
+            <!-- https://github.com/TroyAWilson/TechdegreeProjectTen -->
+            <a href ="ProjectPages/projectFour.html">
               <div class="link">
                 <p>Learn more...</p>
                 <img src ="images/arrow.svg" width="25px" height="25px">
@@ -216,7 +228,8 @@
                 <li>Flickr API</li>
               </ul>
             </div>
-            <a href ="https://github.com/TroyAWilson/techdegree-project-eleven">
+            <!-- https://github.com/TroyAWilson/techdegree-project-eleven -->
+            <a href ="ProjectPages/projectFive.html">
               <div class="link">
                 <p>Learn more...</p>
                 <img src ="images/arrow.svg" width="25px" height="25px">
@@ -269,8 +282,8 @@
       <!-- I'll remove this inline code and put it into the sass file when I've put sass onto this computer  -->
       <img height ="600px" overflow="hidden" src ="images/closeupcode.jpg">
       <div class="break-quote">
-        <!-- <p>"Mathematical science shows what is. It is the language of unseen relations between things. But to use and apply that language, we must be able fully to appreciate, to feel, to seize the unseen, the unconscious."</p>
-        <p>-Ada Lovelace</p> -->
+        <p>"Mathematical science shows what is. It is the language of unseen relations between things. But to use and apply that language, we must be able fully to appreciate, to feel, to seize the unseen, the unconscious."</p>
+        <p>-Ada Lovelace</p>
       </div>
     </div>
 
@@ -356,30 +369,30 @@
           </div>
         </div>
       </div>
-
+      <!-- Need to figure out a way to get this to send without opening the mail thing -->
       <div class ="contact-form">
         <h4>Want <br> To Hire Me?</h4>
-        <form>
+        <form action="mailto:Troyaustynwilson@gmail.com">
           <div class ="form-input">
             <label for ="">Name:</label>
-            <input type ="text">
+            <input type ="text" name="name">
           </div>
 
           <div class ="form-input">
             <label for ="">Email:</label>
-            <input type ="email">
+            <input type ="email" name="mail">
           </div>
 
           <div class ="form-input">
             <label for ="">Subject:</label>
-            <input type ="text">
+            <input type ="text" name="subject">
           </div>
 
           <div class ="form-input">
             <label for ="">Message:</label>
-            <textarea>
+            <textarea name ="message">
             </textarea>
-            <button class="contact-submit-button">Submit</button>
+            <button type="submit" value = "send" class="contact-submit-button">Submit</button>
             <!-- Need to remove default behavior on this button -->
           </div>
         </form>

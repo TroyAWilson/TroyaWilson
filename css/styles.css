@@ -226,7 +226,7 @@ h6 {
 .introPiece {
   max-width: 100%;
   background-color: #242930;
-  background-image: url("../images/abstract-blur.jpg");
+  background-image: url("../images/background-background-image-clouds-1054289.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -237,13 +237,15 @@ h6 {
     max-width: 100px; }
   @media (min-width: 720px) {
     .introPiece {
-      padding-top: 175px; } }
+      padding-top: 150px; } }
 
 .intro-title {
   font-size: 2.2em; }
 
 .intro-span {
-  font-size: 4em; }
+  color: #ff4162;
+  font-size: 5em;
+  font-family: 'Pacifico', cursive; }
 
 .intro-p {
   font-size: 1.2em;
@@ -329,6 +331,9 @@ h6 {
 
 .project-information:hover {
   opacity: 1; }
+  @media (min-width: 720px) {
+    .project-information:hover {
+      transform: scale(1.2); } }
 
 .link {
   display: flex;
@@ -345,6 +350,59 @@ h6 {
 
 .link:hover {
   cursor: pointer; }
+
+/*******************************************************************************
+
+Project page styles
+
+*******************************************************************************/
+.projectPage-main-container {
+  margin: 0;
+  padding: 0; }
+  .projectPage-main-container h1 {
+    text-align: center; }
+
+.projectPage-main-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  z-index: 1000; }
+  .projectPage-main-nav h2 {
+    margin-left: 10%;
+    font-size: 1em; }
+    @media (min-width: 720px) {
+      .projectPage-main-nav h2 {
+        font-size: 25px; } }
+
+.projectPage-big-image {
+  max-width: 100%; }
+
+.projectPage-small-image {
+  max-width: 30%; }
+
+.projectPage-images-container {
+  max-width: 50%; }
+
+.projectPage-flexContainer {
+  display: flex;
+  margin: 25px; }
+
+.projectPage-description {
+  max-width: 50%;
+  padding: 10px; }
+
+.projectPage-link {
+  background-color: #ff4162;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 50px;
+  transition: .5s ease-out; }
+
+.projectPage-link:hover {
+  background-color: whitesmoke;
+  color: #242930;
+  border: 1px #242930 solid; }
 
 .pricing-container {
   display: flex;
@@ -456,6 +514,9 @@ a:hover {
   .breakImage img {
     width: 100%;
     opacity: .5; }
+  @media (min-width: 720px) {
+    .breakImage {
+      display: block; } }
 
 .break-quote {
   position: absolute;
@@ -466,8 +527,12 @@ a:hover {
   font-size: 2em;
   color: #242930; }
   .break-quote p, .break-quote span {
+    display: none;
     text-shadow: 0px .5px  whitesmoke;
     text-indent: 1em; }
+    @media (min-width: 720px) {
+      .break-quote p, .break-quote span {
+        display: inline-block; } }
 
 .indent {
   text-indent: 2em; }
