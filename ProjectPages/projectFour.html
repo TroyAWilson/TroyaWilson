@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<!--
+      Since the internet is out and I can't push this up I'll make my comments here,
+    Updated the photo gallery page, but still need to hook up the modal for the smaller images
+    as well as make sure the project will go live. I unfortuntley chose the worse project to practice this
+    with.
+
+    Need to make sure the project pages are mobile friendly as well/ as of right now they aren't
+
+    Need to look into how to get the form to work with emails at the bottom of the main index
+
+    Replace lorem ipsum on the main page as well as wiki copy paste
+
+    May change portfolio hover affect, this is low priority though
+
+    Should look into icon links and/or just paying so I don't have to link them
+
+
+ -->
   <head>
     <meta charset="utf-8">
-    <title>Javascript Text Game</title>
+    <title>Employee Directory Project</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" type="image/svg" href="../images/tawlogo.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
   </head>
   <body>
     <div class="projectPage-main-container">
@@ -21,7 +40,7 @@
             <div class="projectPage-main-nav" id="sticker">
               <h2 class="name">Troy <span class = "pinkText">A</span> Wilson</h2>
               <ul class="nav">
-                <li><a class ="pinkText" href="../index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="../index.html#About">About</a></li>
                 <li><a href="../index.html#Portfolio">Portfolio</a></li>
                 <li><a href="../index.html#Services">Services</a></li>
@@ -30,22 +49,48 @@
               </ul>
             </div>
           </header>
-          <img class="projectPage-big-image" src="../images/attractive-bar-barista-296888.jpg"></img>
-          <h1>Javascript Text Game</h1>
+          <h1>Employee Directory</h1>
+          <img class="projectPage-big-image" src="../images/Portfolio images/full pic slice.svg"></img>
           <div class="projectPage-flexContainer">
             <div class="projectPage-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <ul>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-              </ul>
-              <a class="projectPage-link" href="#">See it live!</a>
+              <p>Employee directory for an imaginary start-up, this project implements API usage of the fake people thingy API</p>
+              <div class ="projectPage-skillsChart">
+                <canvas id="projectPage-myChart4" ></canvas>
+                <script>
+                var ctx = document.getElementById("projectPage-myChart4").getContext('2d');
+                var myChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                labels: ["HTML", "CSS", "Javascript "],
+                datasets: [{
+                    label: 'Skills',
+                    data: [10, 10, 80],
+                    backgroundColor: [
+                        'rgba(255, 87, 34, 1)',
+                        'rgba(33, 150, 243, 1)',
+                        'rgba(255, 218, 68, 1)',
+                        // 'rgba(150,50,198,1)',
+                        // 'rgba(30,223,113,1)',
+                    ],
+                    borderColor: [
+                      'rgba(245, 245, 245, 1)',
+                      'rgba(245, 245, 245, 1)',
+                      'rgba(245, 245, 245, 1)',
+                      // 'rgba(245, 245, 245, 1)',
+                      // 'rgba(245, 245, 245, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+                },
+                });
+                </script>
+              </div>
+              <a class="projectPage-link" href="liveProjects/TechdegreeProjectTen/index.html">See it live!</a>
             </div>
             <div class="projectPage-images-container">
-              <img class="projectPage-small-image" src="../images/aroma-aromatic-art-434213.jpg" alt="">
-              <img class="projectPage-small-image" src="../images/beverage-coffee-cup-12597.jpg" alt="">
-              <img class="projectPage-small-image" src="../images/caffeine-coffee-cup-6347.jpg" alt="">
+              <img class="projectPage-small-image" src="../images/Portfolio images/small slice.svg" alt="">
+              <img class="projectPage-small-image" src="../images/Portfolio images/modal slice.svg" alt="">
+              <img class="projectPage-small-image" src="../images/Portfolio images/close pic.svg" alt="">
             </div>
           </div>
     </div>

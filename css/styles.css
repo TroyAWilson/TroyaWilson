@@ -366,8 +366,14 @@ Project page styles
   display: flex;
   justify-content: space-between;
   width: 100%;
-  position: absolute;
-  z-index: 1000; }
+  z-index: 1000;
+  color: #242930; }
+  .projectPage-main-nav a {
+    color: #242930;
+    text-decoration: none;
+    transition: color .3s; }
+  .projectPage-main-nav a:hover {
+    color: #ff4162; }
   .projectPage-main-nav h2 {
     margin-left: 10%;
     font-size: 1em; }
@@ -376,7 +382,9 @@ Project page styles
         font-size: 25px; } }
 
 .projectPage-big-image {
-  max-width: 100%; }
+  max-width: 99%;
+  box-shadow: 1px 0px 11px #242930;
+  margin: 3px; }
 
 .projectPage-small-image {
   max-width: 30%; }
@@ -393,9 +401,11 @@ Project page styles
   padding: 10px; }
 
 .projectPage-link {
+  font-size: 1.5em;
+  color: whitesmoke;
   background-color: #ff4162;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   margin: 50px;
   transition: .5s ease-out; }
 
@@ -403,6 +413,14 @@ Project page styles
   background-color: whitesmoke;
   color: #242930;
   border: 1px #242930 solid; }
+
+#projectPage-myChart1,
+#projectPage-myChart2,
+#projectPage-myChart3,
+#projectPage-myChart4,
+#projectPage-myChart5 {
+  max-width: 250px;
+  margin-bottom: 25px; }
 
 .pricing-container {
   display: flex;
@@ -428,7 +446,6 @@ Project page styles
       width: 31.5%; } }
 
 .pricing-button {
-  border: none;
   padding: 10px 25px;
   border-radius: 2px;
   background-color: #ff4162;
@@ -491,12 +508,17 @@ body {
   font-family: "poppins", sans-serif; }
 
 a {
-  text-decoration: none;
-  color: whitesmoke;
-  transition: color .3s; }
+  text-decoration: none; }
 
 a:hover {
   color: #ff4162; }
+
+.styledLink {
+  text-decoration: none;
+  transition: color .3s;
+  color: whitesmoke; }
+  .styledLink:hover {
+    color: #ff4162; }
 
 .main-container {
   display: flex;

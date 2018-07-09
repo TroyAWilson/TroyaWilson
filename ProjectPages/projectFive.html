@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" type="image/svg" href="../images/tawlogo.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
   </head>
   <body>
     <div class="projectPage-main-container">
@@ -30,22 +31,48 @@
               </ul>
             </div>
           </header>
-          <img class="projectPage-big-image" src="../images/attractive-bar-barista-296888.jpg"></img>
-          <h1>Javascript Text Game</h1>
+          <h1>Wheel of Success!</h1>
+          <img class="projectPage-big-image" src="../images/Portfolio images/fullWheelSuccess.svg"></img>
           <div class="projectPage-flexContainer">
             <div class="projectPage-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <ul>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-              </ul>
-              <a class="projectPage-link" href="#">See it live!</a>
+              <p>Browser version of "Wheel of Fortune", a word guessing game where players click letters onscreen to try and guess one of five random phrases</p>
+              <div class ="projectPage-skillsChart">
+                <canvas id="projectPage-myChart5" ></canvas>
+                <script>
+                var ctx = document.getElementById("projectPage-myChart5").getContext('2d');
+                var myChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                labels: ["HTML", "CSS", "Javascript "],
+                datasets: [{
+                    label: 'Skills',
+                    data: [10, 10, 80],
+                    backgroundColor: [
+                        'rgba(255, 87, 34, 1)',
+                        'rgba(33, 150, 243, 1)',
+                        'rgba(255, 218, 68, 1)',
+                        // 'rgba(150,50,198,1)',
+                        // 'rgba(30,223,113,1)',
+                    ],
+                    borderColor: [
+                      'rgba(245, 245, 245, 1)',
+                      'rgba(245, 245, 245, 1)',
+                      'rgba(245, 245, 245, 1)',
+                      // 'rgba(245, 245, 245, 1)',
+                      // 'rgba(245, 245, 245, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+                },
+                });
+                </script>
+              </div>
+              <a class="projectPage-link" href="liveProjects/TechdegreeProjectSeven/index.html">See it live!</a>
             </div>
             <div class="projectPage-images-container">
-              <img class="projectPage-small-image" src="../images/aroma-aromatic-art-434213.jpg" alt="">
-              <img class="projectPage-small-image" src="../images/beverage-coffee-cup-12597.jpg" alt="">
-              <img class="projectPage-small-image" src="../images/caffeine-coffee-cup-6347.jpg" alt="">
+              <img class="projectPage-small-image" src="../images/Portfolio images/gameboardColorWS.svg" alt="">
+              <img class="projectPage-small-image" src="../images/Portfolio images/keyboardWS.svg" alt="">
+              <img class="projectPage-small-image" src="../images/Portfolio images/HeartsWS.svg" alt="">
             </div>
           </div>
     </div>

@@ -104,8 +104,17 @@ Project page styles
     display:flex;
     justify-content: space-between;
     width: 100%;
-    position: absolute;
+    // position: absolute;
     z-index: 1000;
+    color:$shark;
+    a{
+      color: $shark;
+      text-decoration: none;
+      transition: color .3s;
+    }
+    a:hover{
+      color: $off-pink;
+    }
     h2{
       margin-left: 10%;
       font-size: 1em;
@@ -115,7 +124,9 @@ Project page styles
     }
 }
 .projectPage-big-image{
-  max-width: 100%;
+  max-width: 99%;
+  box-shadow: 1px 0px 11px $shark;
+  margin: 3px;
 }
 .projectPage-small-image{
   max-width: 30%;
@@ -132,9 +143,11 @@ Project page styles
   padding: 10px;
 }
 .projectPage-link{
+  font-size: 1.5em;
+  color: whitesmoke;
   background-color: $off-pink;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   margin: 50px;
   transition: .5s ease-out;
 }
@@ -142,4 +155,12 @@ Project page styles
   background-color: whitesmoke;
   color:$shark;
   border: 1px $shark solid;
+}
+#projectPage-myChart1,
+#projectPage-myChart2,
+#projectPage-myChart3,
+#projectPage-myChart4,
+#projectPage-myChart5{
+  max-width: 250px;
+  margin-bottom: 25px;
 }

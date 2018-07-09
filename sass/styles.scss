@@ -13,11 +13,17 @@ body{
 }
 a{
   text-decoration: none;
-  color: whitesmoke;
-  transition: color .3s;
 }
 a:hover{
   color: $off-pink;
+}
+.styledLink{
+    text-decoration: none;
+    transition: color .3s;
+    color: whitesmoke;
+  &:hover{
+    color: $off-pink;
+  }
 }
 .main-container{
   display: flex;
