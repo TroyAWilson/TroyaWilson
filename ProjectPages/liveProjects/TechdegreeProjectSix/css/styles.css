@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif; }
+  @media (min-width: 768px) {
+    body {
+      margin: 25px 270px; } }
+
+p {
+  margin: 25px; }
+
+.currentText {
+  color: orange; }
+
+/*# sourceMappingURL=styles.css.map */
