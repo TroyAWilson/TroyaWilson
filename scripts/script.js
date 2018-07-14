@@ -12,10 +12,16 @@ servicesWordPress = document.getElementsByClassName('services-wordpress');
   $("header").sticky({topSpacing:0,responsiveWidth:true});
 
 /************************************************************************************************************************
-//Other
+//Portfolio Animatinons
 *************************************************************************************************************************/
 
-
+$(".project").mouseover(function(){
+    $('.project-information').css({'transform' : 'translateY(-100px)'});
+    $('.project-image').css({'transform' : 'scale(1.1)'})
+  }).mouseout(function(){
+    $('.project-information').css({'transform' : 'translateY(0px)'});
+    $('.project-image').css({'transform' : 'scale(1)'})
+});
 
 
 /************************************************************************************************************************
