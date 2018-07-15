@@ -14,15 +14,15 @@ servicesWordPress = document.getElementsByClassName('services-wordpress');
 /************************************************************************************************************************
 //Portfolio Animatinons
 *************************************************************************************************************************/
-
-$(".project").mouseover(function(){
-    $('.project-information').css({'transform' : 'translateY(-100px)'});
-    $('.project-image').css({'transform' : 'scale(1.1)'})
+for(let i =0; i < 5; i++){
+$(".project").eq(i).mouseover(function(){
+    $('.project-information').eq(i).css({'transform' : 'translateY(-100px)'});
+      //Using the .eq() method lets me pick out a specfic element in the array similar to using project-information[i]
+    $('.project-image').eq(i).css({'transform' : 'scale(1.1)'});
   }).mouseout(function(){
-    $('.project-information').css({'transform' : 'translateY(0px)'});
-    $('.project-image').css({'transform' : 'scale(1)'})
-});
-
+    $('.project-information').eq(i).css({'transform' : 'translateY(0px)'});
+    $('.project-image').eq(i).css({'transform' : 'scale(1)'});
+})};
 
 /************************************************************************************************************************
 //Functionality for the services buttons, changes the text when each respective button is clicked
