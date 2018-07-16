@@ -5,6 +5,13 @@
   display: flex;
   flex-wrap: wrap; }
 
+.about-create {
+  color: #ff4162;
+  font-size: 3em;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  text-decoration: underline; }
+
 .whatIdo {
   padding-top: 50px;
   width: 100%;
@@ -47,7 +54,7 @@
 
 #myChart {
   position: absolute;
-  top: 1065px;
+  top: 1250px;
   right: 100px;
   float: right;
   max-width: 30%; }
@@ -301,7 +308,7 @@ h6 {
 .project-information {
   display: flex;
   position: absolute;
-  top: 30px;
+  top: 357px;
   left: 5px;
   width: 100%;
   height: 100px;
@@ -310,7 +317,7 @@ h6 {
   color: whitesmoke;
   opacity: 1;
   transition: .7s ease-out;
-  font-size: 2em; }
+  font-size: 1.5em; }
   @media (min-width: 720px) {
     .project-information {
       font-size: 1em;
@@ -329,6 +336,7 @@ h6 {
       flex-direction: column; } }
 
 .project-information:hover {
+  transform: translateY(200px);
   opacity: 1; }
   @media (min-width: 720px) {
     .project-information:hover {
@@ -384,9 +392,8 @@ Project page styles
         font-size: 25px; } }
 
 .projectPage-big-image {
-  max-width: 99%;
-  box-shadow: 1px 0px 11px #242930;
-  margin: 3px; }
+  max-width: 100%;
+  box-shadow: 1px 0px 11px #242930; }
 
 .projectPage-small-image {
   max-width: 30%; }
@@ -546,7 +553,7 @@ a:hover {
   position: absolute;
   z-index: 100;
   max-width: 75%;
-  top: 3300px;
+  top: 3375px;
   left: 220px;
   font-size: 2em;
   color: #242930; }

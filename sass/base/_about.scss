@@ -5,6 +5,13 @@
   display:flex;
   flex-wrap: wrap;
 }
+.about-create{
+  color:$off-pink;
+  font-size: 3em;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  text-decoration: underline;
+}
 .whatIdo{
   padding-top: 50px;
   width: 100%;
@@ -53,7 +60,7 @@
 }
 #myChart{
   position: absolute;
-  top: 1065px;
+  top: 1250px;
   right: 100px;
   float:right;
   max-width: 30%;

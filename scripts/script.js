@@ -28,12 +28,12 @@ $(".project").eq(i).mouseover(function(){
 //Functionality for the services buttons, changes the text when each respective button is clicked
 *************************************************************************************************************************/
 servicesDevelopment[0].addEventListener('click', function (){
-    leftServices[1].textContent = "I am a developer at heart, developing websites is my passion. I use the lastest in Front-end development technologies such as HTML5, CSS3, ES6, jQuery and Python to create unique websites and web applications. All my code is clean and follows W3C standards";
+    leftServices[1].textContent = "I am a developer at heart, developing websites is my passion. I use the lastest in Front-end development technologies such as HTML5, CSS3, ES6, jQuery and Python to create unique websites and web applications. All my code is clean and follows W3C standards. Let's create together!";
     // rightServices[1].textContent =" 'web delopment' usually refers to the main non-design aspects of building web sites: writing markup and coding. Most recently Web development has come to mean the creation of content management systems or CMS. These CMS can be made from scratch, proprietary or open source. In broad terms the CMS acts as middleware between the database and the user through the browser. A principle benefit of a CMS is that it allows non-technical people to make changes to their"
 });
 
 servicesDesign[0].addEventListener('click', function (){
-    leftServices[1].textContent = "Design is what I do and love. It's literally the first skill I picked up. I can handle everything from logos, marketing material, business cards, web site redesigns and mockups plus much more. I use the latest tools in design to come up with modern and awesome designs";
+    leftServices[1].textContent = "Design goes hand in hand with development. I create logos, buisness cards, website redesigns, and much more. Using modern design tools like Sketch and Photoshop. Let's create together!";
     // rightServices[1].textContent ="The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines."
 });
 

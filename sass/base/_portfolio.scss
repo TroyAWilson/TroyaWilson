@@ -34,7 +34,7 @@
   display: flex;
   // flex-direction: column;
   position: absolute;
-  top: 30px;
+  top: 357px;
   left: 5px;
   width: 100%;
   height: 100px;
@@ -43,7 +43,7 @@
   color: whitesmoke;
   opacity: 1;
   transition: .7s ease-out;
-  font-size: 2em;
+  font-size: 1.5em;
     @media(min-width: 720px){
       font-size: 1em;
       top: 450px;
@@ -62,6 +62,7 @@
   }
 }
 .project-information:hover{
+  transform: translateY(200px);
   opacity: 1;
   @media(min-width: 720px){
     transform:translatey(100px);
@@ -126,10 +127,10 @@ Project page styles
     }
 }
 .projectPage-big-image{
-  max-width: 99%;
+  max-width: 100%;
   box-shadow: 1px 0px 11px $shark;
   // margin: 3px;
-  text-align: center;
+  // text-align: center;
 }
 .projectPage-small-image{
   max-width: 30%;
