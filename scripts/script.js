@@ -42,3 +42,13 @@ servicesWordPress[0].addEventListener('click', function (){
     // leftServices[1].textContent = "WordPress is a Content Management System (CMS) that powers 76.5 million sites. I specialize in setting up and customizing premium themes as well as developing custom ones fit for any business or niche. All WordPress sites come with free CPanel hosting and basic SEO optimization";
     // rightServices[1].textContent ="and the second case could be a computer running the software package WordPress.org.[5] A local computer may be used for single-user testing and learning purposes. Features include a plugin architecture and a template system. WordPress is used by 30.6% of the top 10 million websites as of April 2018.As such, WordPress is the most popular website management or blogging system in use on the Web,"
 });
+
+/************************************************************************************************************************
+// jQuery for form validation
+*************************************************************************************************************************/
+
+// var frmvalidator  = new Validator("contactform");
+// frmvalidator.addValidation("name","req","Please provide your name");
+// frmvalidator.addValidation("email","req","Please provide your email");
+// frmvalidator.addValidation("email","email",
+//   "Please enter a valid email address");
