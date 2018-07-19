@@ -64,4 +64,10 @@
   right: 100px;
   float:right;
   max-width: 30%;
+  @media(max-width: 1024px){
+    top:1280px;
+    right:60px;
+  }
 }
+//top 1250
+//right 100

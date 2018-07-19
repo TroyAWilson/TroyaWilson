@@ -58,6 +58,10 @@
   right: 100px;
   float: right;
   max-width: 30%; }
+  @media (max-width: 1024px) {
+    #myChart {
+      top: 1280px;
+      right: 60px; } }
 
 .contact-container {
   display: flex;
@@ -320,13 +324,26 @@ h6 {
   font-size: 1.5em; }
   @media (min-width: 720px) {
     .project-information {
-      font-size: 1em;
-      top: 450px;
+      font-size: .65em;
+      top: 245px;
       left: 0px;
       height: 30%;
       justify-content: space-between;
       width: 100%;
       padding: 15px; } }
+  @media (min-width: 1024px) {
+    .project-information {
+      font-size: 1em;
+      top: 320px; } }
+  @media (min-width: 1280px) {
+    .project-information {
+      top: 400px; } }
+  @media (min-width: 1366px) {
+    .project-information {
+      top: 425px; } }
+  @media (min-width: 1440px) {
+    .project-information {
+      top: 450px; } }
 
 .small-hidden {
   display: none; }
@@ -453,6 +470,12 @@ Project page styles
   @media (min-width: 720px) {
     .Pricing-box-container {
       width: 31.5%; } }
+  @media (min-width: 1024px) {
+    .Pricing-box-container {
+      margin: 7px; } }
+  @media (min-width: 1440px) {
+    .Pricing-box-container {
+      margin: 10px; } }
 
 .pricing-button {
   padding: 10px 25px;
@@ -495,7 +518,11 @@ Project page styles
   transition: background-color .5s, color .5s; }
   @media (min-width: 720px) {
     .services-flex {
-      width: 30%; } }
+      width: 30%;
+      margin: 13px; } }
+  @media (min-width: 1440px) {
+    .services-flex {
+      margin: 15px; } }
 
 .services-flex:hover {
   background-color: #242930;
@@ -564,6 +591,12 @@ a:hover {
     @media (min-width: 720px) {
       .break-quote p, .break-quote span {
         display: inline-block; } }
+  @media (min-width: 1024px) {
+    .break-quote {
+      top: 3300px; } }
+  @media (min-width: 1440px) {
+    .break-quote {
+      top: 3375px; } }
 
 .indent {
   text-indent: 2em; }

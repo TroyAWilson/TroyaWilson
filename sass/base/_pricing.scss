@@ -24,6 +24,12 @@
   @media(min-width: 720px){
     width:31.5%;
   }
+  @media(min-width: 1024px){
+    margin: 7px;
+  }
+  @media(min-width: 1440px){
+    margin:10px;
+  }
 }
 .pricing-button{
   // border: none;

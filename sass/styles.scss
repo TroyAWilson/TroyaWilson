@@ -44,7 +44,7 @@ a:hover{
   }
   @media(min-width: 720px){
     display:block;
-}
+  }
 }
 .break-quote{
   position: absolute;
@@ -61,6 +61,12 @@ a:hover{
     @media(min-width:720px){
       display:inline-block;
     }
+  }
+  @media(min-width: 1024px){
+    top:3300px;
+  }
+  @media(min-width: 1440px){
+    top:3375px;
   }
 }
 .indent{

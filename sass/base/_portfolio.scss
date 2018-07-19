@@ -45,13 +45,26 @@
   transition: .7s ease-out;
   font-size: 1.5em;
     @media(min-width: 720px){
-      font-size: 1em;
-      top: 450px;
+      font-size: .65em;
+      top: 245px;
       left: 0px;
       height: 30%;
       justify-content: space-between;
       width: 100%;
       padding: 15px;
+  }
+  @media(min-width: 1024px){
+    font-size: 1em;
+    top:320px;
+  }
+  @media(min-width: 1280px){
+    top:400px;
+  }
+  @media(min-width: 1366px){
+    top:425px;
+  }
+  @media(min-width: 1440px){
+    top:450px;
   }
 }
 .small-hidden{
