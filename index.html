@@ -17,6 +17,7 @@
   <!-- Scripts for the chart plug in -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 
+  <?php require "scripts/formSend.php"?>
 </head>
 <body>
   <div class ="main-container">
@@ -324,7 +325,8 @@
       <!-- Need to figure out a way to get this to send without opening the mail thing -->
       <div class ="contact-form">
         <h4>Want <br> To Hire Me?</h4>
-        <form method="post" name="contactform" action="formSend.php" >
+        <form method="post" name="contactform" action="mailto:TroyAWilson@gmail.com" >
+          <!-- action="formSend.php" -->
           <div class ="form-input">
             <label for ="name">Name:</label>
             <input type ="text" name="name">
@@ -371,7 +373,7 @@
     </footer>
 </div>
 <!-- PHP link -->
-<?php require "formSend.php"?>
+<?php require "scripts/formSend.php"?>
 <!-- Links to my JS files -->
 <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="scripts/sticky-master/jquery.sticky.js"></script>

@@ -1,31 +1,28 @@
 <?php
-$errors = '';
-$myemail = 'troyaustynwilson@gmail.com';//<-----Put Your email address here.
-if(empty($_POST['name'])  ||
-   empty($_POST['email']) ||
-   empty($_POST['message']))
+if(!isset($POST['submit']))
 {
-    $errors .= "\n Error: all fields are required";
+  echo "error, you need to submit the form!";
 }
-$name = $_POST['name'];
-$email_address = $_POST['email'];
+$name =$_POST['name'];
+$visitor_email = $_POST['email'];
 $message = $_POST['message'];
-if (!preg_match(
-"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
-$email_address))
+
+// Validation
+if(empty($name)||empty($visitor_email))
 {
-    $errors .= "\n Error: Invalid email address";
+  echo "Name and email are mandatory!";
+  exit;
 }
 
-if( empty($errors))
-{
-$to = $myemail;
-$email_subject = "Contact form submission: $name";
-$email_body = "You have received a new message. ".
-" Here are the details:\n Name: $name \n ".
-"Email: $email_address\n Message \n $message";
-$headers = "From: $myemail\n";
-$headers .= "Reply-To: $email_address";
+$email_from = 'troyaustynwilson@gmail.com';
+$email_subject ="New Form Submission";
+$email_body ="You have recieved a message from the user $name \n".
+        "email address: $visitor_email \n".
+        "Here is the message: $message \n".
+
+$to ="troyaustynwilson@gmail.com";
+$headers ="From: $email_from \r\n";
+
+// Sends email
 mail($to,$email_subject,$email_body,$headers);
-// test
 ?>
