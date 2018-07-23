@@ -209,6 +209,7 @@ h6 {
     transition: .5s ease-out; }
 
 .main-nav {
+  text-shadow: 0.5px 0.5px 0px #242930;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -251,7 +252,8 @@ h6 {
       padding-top: 150px; } }
 
 .intro-title {
-  font-size: 2.2em; }
+  font-size: 2.2em;
+  text-shadow: 0px 0px 1px black; }
 
 .intro-span {
   color: #ff4162;
@@ -260,7 +262,8 @@ h6 {
 
 .intro-p {
   font-size: 1.2em;
-  max-width: 100%; }
+  max-width: 100%;
+  text-shadow: 0px 0px 1px black; }
 
 .intro-button {
   display: block;
@@ -384,7 +387,7 @@ Project page styles
 
 *******************************************************************************/
 .projectPage-main-container {
-  margin: 0;
+  margin: 50px;
   padding: 0; }
   .projectPage-main-container h1 {
     text-align: center; }
