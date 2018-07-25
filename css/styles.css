@@ -209,7 +209,6 @@ h6 {
     transition: .5s ease-out; }
 
 .main-nav {
-  text-shadow: 0.5px 0.5px 0px #242930;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -221,6 +220,9 @@ h6 {
     @media (min-width: 720px) {
       .main-nav h2 {
         font-size: 25px; } }
+  @media (min-width: 720px) {
+    .main-nav {
+      text-shadow: 0.5px 0.5px 0px #242930; } }
 
 .pinkText {
   color: #ff4162; }
@@ -252,8 +254,10 @@ h6 {
       padding-top: 150px; } }
 
 .intro-title {
-  font-size: 2.2em;
-  text-shadow: 0px 0px 1px black; }
+  font-size: 2.2em; }
+  @media (min-width: 720px) {
+    .intro-title {
+      text-shadow: 0px 0px 1px black; } }
 
 .intro-span {
   color: #ff4162;
@@ -262,8 +266,10 @@ h6 {
 
 .intro-p {
   font-size: 1.2em;
-  max-width: 100%;
-  text-shadow: 0px 0px 1px black; }
+  max-width: 100%; }
+  @media (min-width: 720px) {
+    .intro-p {
+      text-shadow: 0px 0px 1px black; } }
 
 .intro-button {
   display: block;
@@ -347,6 +353,9 @@ h6 {
   @media (min-width: 1440px) {
     .project-information {
       top: 450px; } }
+  @media (min-width: 1920px) {
+    .project-information {
+      top: 575px; } }
 
 .small-hidden {
   display: none; }
@@ -600,6 +609,9 @@ a:hover {
   @media (min-width: 1440px) {
     .break-quote {
       top: 3375px; } }
+  @media (min-width: 1920px) {
+    .break-quote {
+      top: 3625px; } }
 
 .indent {
   text-indent: 2em; }
