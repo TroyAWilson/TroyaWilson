@@ -4,7 +4,7 @@
 
 # Greetings Travelers!
 
-Thanks for stopping by I'm currently working at Sonoma State Universities EdEon STEM program. Though I encourage you to checkout out the projects here anyway, they're pretty cool!
+Thanks for stopping by I'm currently working at Sonoma State Universities' EdEon STEM program. Though I encourage you to checkout out the projects here anyway, they're pretty cool!
 
 Work Repo's not necessarily represented.
 
